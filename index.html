@@ -320,13 +320,16 @@
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold">無料見積もり・相談</h2>
       <p class="mt-2 text-slate-300">最短当日中にご返信。オンライン/訪問どちらも可。</p>
-      <form class="mt-6 grid md:grid-cols-2 gap-4">
-        <input class="w-full p-3 rounded-xl text-slate-900" placeholder="お名前">
-        <input class="w-full p-3 rounded-xl text-slate-900" placeholder="メールアドレス">
-        <input class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" placeholder="会社名（任意）">
-        <textarea class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" rows="4" placeholder="ご要望・現在の課題など"></textarea>
-        <button class="px-5 py-3 rounded-xl bg-white text-slate-900 font-semibold md:col-span-2">送信する</button>
+      <form id="contactForm" class="mt-6 grid md:grid-cols-2 gap-4" data-endpoint="https://formspree.io/f/mwpnaywb" novalidate>
+        <input class="w-full p-3 rounded-xl text-slate-900" name="name" placeholder="お名前" required>
+        <input class="w-full p-3 rounded-xl text-slate-900" type="email" name="email" placeholder="メールアドレス" required>
+        <input class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" name="company" placeholder="会社名（任意）">
+        <textarea class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" name="message" rows="4" placeholder="ご要望・現在の課題など" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit" class="px-5 py-3 rounded-xl bg-white text-emerald-700 font-semibold md:col-span-2">送信する</button>
+        <p id="formStatus" class="md:col-span-2 text-sm text-emerald-100"></p>
       </form>
+      <div class="mt-3 text-sm text-emerald-100">送信がうまくいかない場合：<a class="underline" href="mailto:kikoriwakoko@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B(Web)&body=%E3%81%8A%E5%90%8D%E5%89%8D%3A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%3A%0A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%3A%0A">メールアプリで直接送る</a> ／ 電話：<a class="underline" href="tel:07090938266">070-9093-8266</a></div>
       <div class="mt-6 text-sm text-slate-300">電話：070-9093-8266｜メール：kikoriwakoko@gmail.com</div>
     </div>
   </section>
@@ -374,5 +377,6 @@
     document.querySelectorAll('.feat').forEach(el=>el.addEventListener('change', update));
     update();
   </script>
+<script>(function(){const form=document.getElementById('contactForm');if(!form)return;const status=document.getElementById('formStatus');form.addEventListener('submit',async(e)=>{e.preventDefault();const btn=form.querySelector('button[type="submit"]');btn.disabled=true;btn.textContent='送信中...';status.textContent='';const fd=new FormData(form);const endpoint=form.dataset.endpoint;try{const res=await fetch(endpoint,{method:'POST',body:fd,headers:{'Accept':'application/json'}});if(res.ok){form.reset();btn.textContent='送信しました';status.textContent='ありがとうございます。折り返しご連絡します。';}else{throw new Error('Form error');}}catch(err){btn.disabled=false;btn.textContent='送信する';status.textContent='送信に失敗しました。メールアプリで直接お送りください。';const name=encodeURIComponent(form.elements['name']?.value||'');const company=encodeURIComponent(form.elements['company']?.value||'');const message=encodeURIComponent(form.elements['message']?.value||'');const mailto=`mailto:kikoriwakoko@gmail.com?subject=${encodeURIComponent('お問い合わせ(Web)')}&body=お名前:${name}%0A会社名:${company}%0Aお問い合わせ内容:%0A${message}`;window.location.href=mailto;}});})();</script>
 </body>
 </html>
