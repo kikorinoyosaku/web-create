@@ -3,66 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>与作 | 伐採・剪定・危険木対応</title>
-  <meta name="description" content="与作 — 危険木・老木の伐採、庭木の整理、高所作業車対応。一本からOK。愛知県蒲郡市を中心に対応。" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>（社名）Web制作｜中小企業の集客に強いホームページ制作</title>
+  <meta name="description" content="（社名）のホームページ制作。テンプレートからフルオーダーまで。制作費用の目安・事例・制作の流れ・よくある質問を掲載。無料見積もり受付中。">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Noto Sans JP', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-    .container { max-width: 1120px; }
+    html{scroll-behavior:smooth}
+    .container{max-width:1100px}
+    .glass{backdrop-filter:saturate(180%) blur(12px); background:rgba(255,255,255,.7)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .section{padding-top:72px;padding-bottom:72px}
+    .tick:before{content:"✓"; margin-right:.5rem}
+    .sticky-cta{position:fixed;right:1rem;bottom:1rem;z-index:60}
+    details>summary::-webkit-details-marker{display:none}
   </style>
 </head>
-<body class="bg-gradient-to-b from-emerald-50 via-white to-white text-slate-800">
-
+<body class="text-slate-800 antialiased">
   <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-slate-200/60">
+  <header class="sticky top-0 z-50 glass border-b border-slate-200">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-2">
-        <span class="text-2xl font-extrabold text-emerald-700">与作</span>
-        <span class="rounded-full px-2 py-0.5 text-xs bg-emerald-100 text-emerald-700">安全第一</span>
+      <a href="#top" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-2xl bg-slate-900 text-white grid place-items-center font-bold">W</div>
+        <div class="leading-tight">
+          <div class="font-bold">（社名）Web制作</div>
+          <div class="text-xs text-slate-500">集客×信頼×更新しやすさ</div>
+        </div>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-[15px]">
-        <a href="#services" class="hover:text-emerald-700">事業内容</a>
-        <a href="#flow" class="hover:text-emerald-700">作業の流れ</a>
-        <a href="#safety" class="hover:text-emerald-700">安全対策</a>
-        <a href="#about" class="hover:text-emerald-700">代表あいさつ</a>
-        <a href="#pricing" class="hover:text-emerald-700">料金</a>
-        <a href="#qa" class="hover:text-emerald-700">Q&A</a>
-        <a href="#contact" class="hover:text-emerald-700">お問い合わせ</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-slate-900 text-slate-600">サービス</a>
+        <a href="#pricing" class="hover:text-slate-900 text-slate-600">料金</a>
+        <a href="#works" class="hover:text-slate-900 text-slate-600">事例</a>
+        <a href="#flow" class="hover:text-slate-900 text-slate-600">流れ</a>
+        <a href="#faq" class="hover:text-slate-900 text-slate-600">FAQ</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-slate-900 text-white shadow-soft">無料見積もり</a>
       </nav>
-      <div class="flex items-center gap-2">
-        <a href="tel:0120545589" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2 text-white shadow-sm hover:bg-emerald-700 transition">
-          <span class="font-semibold">0120-545-589</span>
-        </a>
-      </div>
+      <a href="#contact" class="md:hidden px-3 py-2 rounded-xl bg-slate-900 text-white text-sm">見積もり</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="top" class="relative">
-    <div class="container mx-auto px-4 pt-14 pb-20">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-            木の安全は暮らしの安心。<span class="block text-emerald-700">プロの伐採・剪定でスッキリ解決</span>
-          </h1>
-          <p class="mt-4 text-slate-600 text-lg">
-            屋根や電線にかかった枝、傾いた木、伸びすぎた庭木まで。一本から丁寧に対応します。
-          </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold shadow hover:bg-emerald-700">見積もり（無料）</a>
-            <a href="mailto:kikoriwakoko@gmail.com" class="rounded-xl bg-white px-5 py-3 text-emerald-700 ring-1 ring-emerald-200 hover:ring-emerald-400">メールで相談</a>
-          </div>
-          <ul class="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-500">
-            <li class="px-2 py-1 rounded-full bg-slate-100">一本からOK</li>
-            <li class="px-2 py-1 rounded-full bg-slate-100">保険加入</li>
-            <li class="px-2 py-1 rounded-full bg-slate-100">高所作業車対応</li>
-          </ul>
+  <section id="top" class="section">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+          中小企業・個人事業に<strong class="bg-yellow-200 px-1">ちょうどいい</strong><br>成果にこだわるホームページ
+        </h1>
+        <p class="mt-5 text-slate-600">テンプレート活用からフルオーダー・CMS構築まで。最短2週間で公開、公開後の運用・改善までワンストップで支援します。</p>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm">
+          <span class="px-3 py-1 rounded-full bg-slate-100">スマホ最適化</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100">SEO基本対策</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100">問い合わせ導線設計</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100">保守サポート</span>
         </div>
-        <div>
-          <div class="relative aspect-[3/4] rounded-3xl overflow-hidden border border-slate-200 shadow-md">
-            <img src="IMG_4710.jpg" alt="表紙写真（スパイダーリフト）" class="w-full h-full object-cover" />
+        <div class="mt-8 flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 text-white shadow-soft">無料見積もり</a>
+          <a href="#pricing" class="px-5 py-3 rounded-xl border border-slate-300">料金を見る</a>
+        </div>
+        <p class="mt-4 text-xs text-slate-500">※表示の金額は目安です。要件により変動します。</p>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1529336953121-a0ce9a5a8c8d?q=80&w=1600&auto=format&fit=crop" alt="制作イメージ" class="rounded-2xl shadow-soft">
+        <div class="absolute -bottom-6 left-6 right-6 rounded-2xl bg-white shadow-soft p-4 flex items-center gap-4">
+          <div class="text-3xl">🚀</div>
+          <div class="text-sm">
+            <div class="font-semibold">公開までの目安：2〜6週間</div>
+            <div class="text-slate-500">小規模サイトやLPは短納期も対応可</div>
           </div>
         </div>
       </div>
@@ -70,180 +74,305 @@
   </section>
 
   <!-- Services -->
-  <section id="services" class="py-12 md:py-16 bg-white">
+  <section id="services" class="section bg-slate-50">
     <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">事業内容</h2>
-        <p class="mt-2 text-slate-600">状況に応じて最適な方法で、安全・迅速に施工します。</p>
+      <h2 class="text-2xl md:text-3xl font-bold">提供サービス</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">コーポレートサイト</div>
+          <p class="mt-2 text-slate-600">会社の信頼を高める定番構成。ニュース更新・採用情報・お問い合わせなど。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">5〜15ページ想定</li>
+            <li class="tick">CMS（WordPress/Headless 可）</li>
+            <li class="tick">セキュリティ/バックアップ設定</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">LP（ランディングページ）</div>
+          <p class="mt-2 text-slate-600">広告やキャンペーンに特化。CVR改善を意識した構成で最短公開。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">1ページ完結</li>
+            <li class="tick">計測タグ/フォーム最適化</li>
+            <li class="tick">A/Bテスト設計（任意）</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">採用サイト</div>
+          <p class="mt-2 text-slate-600">エントリー導線と魅力設計にフォーカス。募集要項の更新もラクに。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">職種別ページ/社員インタビュー</li>
+            <li class="tick">応募フォーム/ATS連携（任意）</li>
+            <li class="tick">CMS更新権限の設計</li>
+          </ul>
+        </div>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm"><div class="flex items-center gap-2"><div class="size-8 rounded-xl bg-emerald-100 text-emerald-700 grid place-items-center">🌳</div><h3 class="font-semibold text-slate-900">危険木・老木の伐採</h3></div><p class="mt-2 text-sm text-slate-600 leading-relaxed">傾き・腐朽・家屋や電線への干渉など、危険度の高い木を安全に処理。</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm"><div class="flex items-center gap-2"><div class="size-8 rounded-xl bg-emerald-100 text-emerald-700 grid place-items-center">🌳</div><h3 class="font-semibold text-slate-900">庭木の整理</h3></div><p class="mt-2 text-sm text-slate-600 leading-relaxed">伸びすぎ・越境・日当たり改善など、一本からお任せください。</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm"><div class="flex items-center gap-2"><div class="size-8 rounded-xl bg-emerald-100 text-emerald-700 grid place-items-center">🌳</div><h3 class="font-semibold text-slate-900">高所作業車による安全施工</h3></div><p class="mt-2 text-sm text-slate-600 leading-relaxed">状況に応じて高所作業車やロープワークで安全・迅速に対応。</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm"><div class="flex items-center gap-2"><div class="size-8 rounded-xl bg-emerald-100 text-emerald-700 grid place-items-center">🌳</div><h3 class="font-semibold text-slate-900">倒木・緊急対応</h3></div><p class="mt-2 text-sm text-slate-600 leading-relaxed">台風・豪雨後の倒木や緊急案件も可能な範囲で対応します。</p></div>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">EC/予約サイト</div>
+          <p class="mt-2 text-slate-600">Shopify等の活用でスピーディに構築。決済・在庫・配送を一元管理。</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">運用・改善</div>
+          <p class="mt-2 text-slate-600">公開後の分析・改善・保守。記事制作/撮影/広告運用まで伴走。</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-xl font-semibold">ブランディング</div>
+          <p class="mt-2 text-slate-600">ロゴ/カラー/トーン&マナーを策定。紙面・看板・SNSまで一貫対応。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container mx-auto px-4">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <h2 class="text-2xl md:text-3xl font-bold">料金の目安</h2>
+        <p class="text-sm text-slate-500">*要件・ページ数・機能により前後します。月額保守は任意。</p>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Plan 1 -->
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <div class="text-sm font-semibold text-slate-500">ライト</div>
+          <div class="mt-2 text-3xl font-extrabold">¥100,000〜¥300,000</div>
+          <p class="mt-2 text-slate-600">テンプレート活用/LPや小規模サイトに。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">1〜5ページ</li>
+            <li class="tick">スマホ最適化</li>
+            <li class="tick">基本SEO/計測タグ</li>
+          </ul>
+        </div>
+        <!-- Plan 2 -->
+        <div class="p-6 rounded-2xl border-2 border-slate-900 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">スタンダード</div>
+          <div class="mt-2 text-3xl font-extrabold">¥300,000〜¥800,000</div>
+          <p class="mt-2 text-slate-600">コーポレート標準構成。CMS/撮影/原稿サポート可。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">5〜15ページ</li>
+            <li class="tick">CMS（ブログ/ニュース）</li>
+            <li class="tick">セキュリティ/バックアップ</li>
+          </ul>
+        </div>
+        <!-- Plan 3 -->
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <div class="text-sm font-semibold text-slate-500">プロ</div>
+          <div class="mt-2 text-3xl font-extrabold">¥800,000〜¥2,000,000</div>
+          <p class="mt-2 text-slate-600">高度なデザイン/機能、大規模コンテンツに。</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-700">
+            <li class="tick">多言語/予約/会員機能など</li>
+            <li class="tick">UX/UI設計/アクセシビリティ</li>
+            <li class="tick">パフォーマンス最適化</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Monthly -->
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50">
+          <div class="font-semibold">運用・保守（任意）</div>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1">
+            <li>ライト：¥5,000/月（ドメイン・SSL更新/軽微修正）</li>
+            <li>標準：¥15,000/月（更新代行/レポート）</li>
+            <li>強化：¥50,000/月（改善提案/ABテスト/記事2本）</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50">
+          <div class="font-semibold">追加オプション</div>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1">
+            <li>写真/動画撮影</li>
+            <li>コピーライティング</li>
+            <li>多言語・予約/決済・会員機能</li>
+            <li>広告運用/計測設計</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50">
+          <div class="font-semibold">納期の目安</div>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1">
+            <li>LP：2〜3週間</li>
+            <li>小中規模サイト：4〜8週間</li>
+            <li>大規模/高度機能：8〜12週間〜</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estimator -->
+  <section class="section bg-slate-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-xl md:text-2xl font-bold">かんたん見積りシミュレーター（概算）</h3>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <label class="block text-sm font-semibold">ページ数：<span id="pagesOut">6</span>ページ</label>
+          <input id="pages" type="range" min="1" max="20" value="6" class="w-full">
+          <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="50000"> お問い合わせフォーム</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="120000"> CMS（ブログ/更新機能）</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="150000"> 予約/決済</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="80000"> 多言語対応</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="60000"> 写真撮影</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="60000"> ライティング支援</label>
+          </div>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="text-sm text-slate-500">※本見積りは概算です（デザイン・要件・素材の有無等により変動）。</div>
+          <div class="mt-4 text-2xl font-extrabold">概算：<span id="sum">¥0</span></div>
+          <div class="mt-2 text-sm text-slate-600">内訳：基本 <span id="base">¥0</span> + 機能 <span id="addons">¥0</span></div>
+          <a href="#contact" class="mt-6 inline-block px-5 py-3 rounded-xl bg-slate-900 text-white">正式見積もりを依頼する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section">
+    <div class="container mx-auto px-4">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <h2 class="text-2xl md:text-3xl font-bold">制作事例（ダミー）</h2>
+        <a href="#contact" class="text-sm underline">もっと見る</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="rounded-2xl overflow-hidden border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="事例A" class="w-full h-44 object-cover">
+          <figcaption class="p-4 text-sm">
+            <div class="font-semibold">製造業コーポレート</div>
+            <div class="text-slate-600">お問い合わせ2.3倍 / 公開4週間</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="事例B" class="w-full h-44 object-cover">
+          <figcaption class="p-4 text-sm">
+            <div class="font-semibold">飲食店LP</div>
+            <div class="text-slate-600">予約率+38% / 公開2週間</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="事例C" class="w-full h-44 object-cover">
+          <figcaption class="p-4 text-sm">
+            <div class="font-semibold">採用サイト</div>
+            <div class="text-slate-600">応募数+52% / 公開6週間</div>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- Flow -->
-  <section id="flow" class="py-12 md:py-16">
+  <section id="flow" class="section bg-slate-50">
     <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl font-bold text-slate-900">作業の流れ</h2><p class="mt-2 text-slate-600">お問い合わせから完了確認まで、分かりやすく丁寧に。</p></div>
-      <ol class="grid md:grid-cols-5 gap-4">
-        <li class="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="absolute -top-3 left-5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">1</div><p class="mt-2 font-semibold text-slate-900">お問い合わせ</p></li>
-        <li class="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="absolute -top-3 left-5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">2</div><p class="mt-2 font-semibold text-slate-900">現地調査</p></li>
-        <li class="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="absolute -top-3 left-5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">3</div><p class="mt-2 font-semibold text-slate-900">お見積り</p></li>
-        <li class="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="absolute -top-3 left-5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">4</div><p class="mt-2 font-semibold text-slate-900">施工</p></li>
-        <li class="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="absolute -top-3 left-5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">5</div><p class="mt-2 font-semibold text-slate-900">完了確認</p></li>
+      <h2 class="text-2xl md:text-3xl font-bold">制作の流れ</h2>
+      <ol class="mt-6 grid md:grid-cols-3 gap-6 list-decimal list-inside">
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">01. ヒアリング & 目標設定</div>
+          <p class="text-slate-600 text-sm mt-2">目的・KPI・想定ユーザー・競合・要件を整理。</p>
+        </li>
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">02. 設計・見積り</div>
+          <p class="text-slate-600 text-sm mt-2">サイトマップ/ワイヤー/制作計画と費用のご提示。</p>
+        </li>
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">03. デザイン/実装</div>
+          <p class="text-slate-600 text-sm mt-2">レビュー→改訂→実装。スマホ/速度/アクセシビリティ対応。</p>
+        </li>
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">04. 検収・公開</div>
+          <p class="text-slate-600 text-sm mt-2">最終確認後に本番公開。計測タグ/サーチコンソール登録など。</p>
+        </li>
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">05. 運用・改善</div>
+          <p class="text-slate-600 text-sm mt-2">更新代行/解析レポート/改善提案/記事制作など。</p>
+        </li>
+        <li class="p-6 bg-white rounded-2xl shadow-soft">
+          <div class="font-semibold">06. 保守・サポート</div>
+          <p class="text-slate-600 text-sm mt-2">バックアップ/セキュリティ/トラブル時の対応。</p>
+        </li>
       </ol>
     </div>
   </section>
 
-  <!-- Safety -->
-  <section id="safety" class="py-12 md:py-16 bg-slate-50">
+  <!-- FAQ -->
+  <section id="faq" class="section">
     <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl font-bold text-slate-900">安全対策</h2><p class="mt-2 text-slate-600">安全第一の施工体制で、安心をお届けします。</p></div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p class="font-semibold">高所作業車を用いた安全施工</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p class="font-semibold">経験豊富な木こり</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p class="font-semibold">保険加入で安心サポート</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-12 md:py-16">
-    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-      <div><h2 class="text-2xl md:text-3xl font-bold text-slate-900">代表あいさつ</h2><p class="mt-4 text-slate-700 leading-relaxed">私は木と人との関わりに魅力を感じ、この仕事を始めました。木を大切にしながらも、安全で快適な暮らしを守ることが使命です。地域の皆さまに安心していただけるよう、一つ一つの仕事に誠意を込めて取り組みます。</p></div>
-      <div class="relative aspect-[4/3] rounded-3xl overflow-hidden border border-slate-200 shadow-md"><img src="IMG_4709.jpg" alt="代表写真" class="w-full h-full object-cover" /></div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-12 md:py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl font-bold text-slate-900">料金</h2><p class="mt-2 text-slate-600">現地確認後に正式お見積り。まずはお気軽にご相談ください。</p></div>
-      <div class="grid lg:grid-cols-2 gap-8">
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-lg font-semibold text-slate-900">基本料金</h3><ul class="mt-4 divide-y divide-slate-200"><li class="flex items-center justify-between py-3 text-sm"><span>出張費（県内一律）</span><span class="font-semibold">3,000円</span></li><li class="flex items-center justify-between py-3 text-sm"><span>現地調査・お見積り</span><span class="font-semibold">無料</span></li></ul></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-lg font-semibold text-slate-900">作業料金（参考・税別）</h3><ul class="mt-4 divide-y divide-slate-200"><li class="flex items-center justify-between py-3 text-sm"><span>庭木の伐採（3m未満）</span><span class="font-semibold">5,000円〜</span></li><li class="flex items-center justify-between py-3 text-sm"><span>中木の伐採（5m未満）</span><span class="font-semibold">15,000円〜</span></li><li class="flex items-center justify-between py-3 text-sm"><span>大木の伐採（10m未満）</span><span class="font-semibold">30,000円〜</span></li><li class="flex items-center justify-between py-3 text-sm"><span>ケヤキ等（10m以上）</span><span class="font-semibold">30,000〜90,000円</span></li><li class="flex items-center justify-between py-3 text-sm"><span>15〜20m以上の大木</span><span class="font-semibold">100,000〜300,000円</span></li><li class="flex items-center justify-between py-3 text-sm"><span>20m以上の大木</span><span class="font-semibold">300,000円以上</span></li><li class="flex items-center justify-between py-3 text-sm"><span>高所作業車を使った伐採</span><span class="font-semibold">50,000円〜</span></li><li class="flex items-center justify-between py-3 text-sm"><span>倒木・緊急対応</span><span class="font-semibold">応相談</span></li></ul><p class="mt-3 text-xs text-slate-500">※ 木の高さ・太さ・場所（電線や建物の近さ）などにより変動します。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Q&A (Accordion) -->
-  <section id="qa" class="py-12 md:py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl font-bold text-slate-900">よくある質問（Q&A）</h2><p class="mt-2 text-slate-600">タップ／クリックで開閉できます。</p></div>
-
-      <div class="divide-y divide-slate-200 border border-slate-200 rounded-2xl bg-white shadow-sm">
-        <!-- Item 1 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 1本からでも剪定・伐採を依頼できますか？</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. 小さな庭木から大径木まで、1本からでも伐採を承ります。</p>
-          </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 作業当日は立ち会いが必要でしょうか？</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. 事前のお見積りの際に打ち合わせをしますので、伐採当日の立ち会いは不要です。完了後に現場をご確認いただき、ご納得いただければ作業終了です。</p>
-          </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 依頼の流れについて教えてください。</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. お問い合わせ → お見積り → ご検討 → 施工 → お支払い の流れです。電話・メールでご連絡いただいた後、現地確認を行いお見積りをご提示します。金額・内容にご納得いただけましたら施工日を決定し、作業後に代金をお支払いください。</p>
-          </div>
-        </div>
-        <!-- Item 4 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 伐採した木を引き取ることはできますか？</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. ご要望に応じて伐採材をお引き渡し可能です。事前に希望サイズをお伝えいただければ、それに合わせて伐採・造材いたします。</p>
-          </div>
-        </div>
-        <!-- Item 5 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 対応可能地域はどこまでですか？</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. 愛知県を中心に対応しておりますが、お見積りが合えば全国に伺います。過去には兵庫県まで対応した実績もございます。現場写真をメールや郵送でいただければ、概算見積りも可能です。</p>
-          </div>
-        </div>
-        <!-- Item 6 -->
-        <div class="p-0">
-          <button class="w-full text-left px-5 py-4 flex items-start justify-between gap-6 accordion-btn" aria-expanded="false">
-            <span class="font-semibold text-slate-900">Q. 隣家から自宅の敷地内に延びてきた枝の剪定は可能ですか？</span>
-            <span class="shrink-0 text-slate-400">＋</span>
-          </button>
-          <div class="px-5 pb-5 hidden accordion-panel">
-            <p class="text-slate-700">A. 隣家の了承をいただければ剪定可能です。法的には可能ですが、トラブル回避のため事前の確認をおすすめします。過去にも隣地境界の施工実績がございます。</p>
-          </div>
-        </div>
+      <h2 class="text-2xl md:text-3xl font-bold">よくある質問</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <details class="p-5 rounded-xl border border-slate-200">
+          <summary class="font-semibold cursor-pointer">費用はどのように決まりますか？</summary>
+          <div class="pt-3 text-slate-600 text-sm">ページ数・機能・デザインの自由度・原稿/写真の有無・依頼先体制（個人/制作会社）などで決まります。まずは目的と優先度を一緒に整理します。</div>
+        </details>
+        <details class="p-5 rounded-xl border border-slate-200">
+          <summary class="font-semibold cursor-pointer">公開までの期間は？</summary>
+          <div class="pt-3 text-slate-600 text-sm">LPで2〜3週間、小中規模サイトで4〜8週間が目安です。素材のご用意状況で前後します。</div>
+        </details>
+        <details class="p-5 rounded-xl border border-slate-200">
+          <summary class="font-semibold cursor-pointer">ドメイン・サーバー費はかかりますか？</summary>
+          <div class="pt-3 text-slate-600 text-sm">はい。年額のドメイン費やサーバー利用料がかかります（数千円〜）。代行契約も可能です。</div>
+        </details>
+        <details class="p-5 rounded-xl border border-slate-200">
+          <summary class="font-semibold cursor-pointer">社内で更新できますか？</summary>
+          <div class="pt-3 text-slate-600 text-sm">CMSの導入/権限設計により、ニュースや採用情報の更新を社内で行えるように設計します。</div>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-12 md:py-16 bg-slate-50">
+  <section id="contact" class="section bg-slate-900 text-white">
     <div class="container mx-auto px-4">
-      <div class="mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl font-bold text-slate-900">お問い合わせ</h2><p class="mt-2 text-slate-600">一本からOK。まずは無料見積もりをご利用ください。</p></div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-4">
-          <div><div class="text-sm text-slate-600">フリーダイヤル</div><a href="tel:0120545589" class="mt-1 block text-lg font-bold text-emerald-700">0120-545-589</a><p class="text-xs text-slate-500">受付時間 10:00〜17:00<br>※お電話の際は「伐採担当」までとお伝えください</p></div>
-          <div><div class="text-sm text-slate-600">直通</div><a href="tel:07090938266" class="mt-1 block text-lg font-bold text-emerald-700">070-9093-8266</a><p class="text-xs text-slate-500">受付時間 10:00〜19:00</p></div>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><div class="text-sm text-slate-600">メール</div><a href="mailto:kikoriwakoko@gmail.com" class="mt-1 block text-lg font-bold text-emerald-700">kikoriwakoko@gmail.com</a></div>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6 mt-6">
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><div class="text-sm text-slate-600">所在地</div><a class="mt-1 block text-lg font-bold text-emerald-700" href="https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%92%B2%E9%83%A1%E5%B8%82%E5%B9%B3%E7%94%B0%E7%94%BA%E9%96%80%E7%94%B01-3-1" target="_blank" rel="noreferrer">愛知県蒲郡市平田町門田1-3-1</a></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><div class="text-sm text-slate-600">名古屋営業所</div><a class="mt-1 block text-lg font-bold text-emerald-700" href="https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%85%E5%8D%971-10-9%20%E5%B1%B1%E5%96%84%E3%83%93%E3%83%AB4F" target="_blank" rel="noreferrer">愛知県名古屋市中村区名駅南1-10-9 山善ビル4F</a></div>
-      </div>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="tel:0120545589" class="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold shadow hover:bg-emerald-700">フリーダイヤルに電話</a>
-        <a href="tel:07090938266" class="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold shadow hover:bg-emerald-700">直通に電話</a>
-        <a href="mailto:kikoriwakoko@gmail.com" class="rounded-xl bg-white px-5 py-3 text-emerald-700 ring-1 ring-emerald-200 hover:ring-emerald-400">メールで依頼</a>
-      </div>
+      <h2 class="text-2xl md:text-3xl font-bold">無料見積もり・相談</h2>
+      <p class="mt-2 text-slate-300">最短当日中にご返信。オンライン/訪問どちらも可。</p>
+      <form class="mt-6 grid md:grid-cols-2 gap-4">
+        <input class="w-full p-3 rounded-xl text-slate-900" placeholder="お名前">
+        <input class="w-full p-3 rounded-xl text-slate-900" placeholder="メールアドレス">
+        <input class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" placeholder="会社名（任意）">
+        <textarea class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" rows="4" placeholder="ご要望・現在の課題など"></textarea>
+        <button class="px-5 py-3 rounded-xl bg-white text-slate-900 font-semibold md:col-span-2">送信する</button>
+      </form>
+      <div class="mt-6 text-sm text-slate-300">電話：（電話番号）｜メール：（メール）</div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="mt-16 border-t border-slate-200 py-8 text-sm">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-slate-500">© 2025 与作. All rights reserved.</p>
-      <div class="text-slate-500">代表者：小田 浩正</div>
+  <footer class="py-10">
+    <div class="container mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>© <span id="year"></span> （社名）Web制作. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#" class="underline">特定商取引法に基づく表記</a>
+        <a href="#" class="underline">プライバシーポリシー</a>
+      </div>
     </div>
   </footer>
 
+  <!-- Sticky CTA -->
+  <div class="sticky-cta">
+    <a href="#contact" class="px-5 py-3 rounded-full bg-slate-900 text-white shadow-soft">無料見積もり</a>
+  </div>
+
   <script>
-    // Simple accordion behavior
-    document.querySelectorAll('.accordion-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        const panel = btn.nextElementSibling;
-        if (panel) panel.classList.toggle('hidden');
-        // toggle +/−
-        const mark = btn.querySelector('span.shrink-0');
-        if (mark) mark.textContent = expanded ? '＋' : '−';
-      });
-    });
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Estimator logic（ざっくり概算）
+    const pages = document.getElementById('pages');
+    const pagesOut = document.getElementById('pagesOut');
+    const sum = document.getElementById('sum');
+    const base = document.getElementById('base');
+    const addons = document.getElementById('addons');
+
+    const update = () => {
+      const p = parseInt(pages.value,10);
+      pagesOut.textContent = p;
+      // 基本費：初期費用15万円 + ページ単価4万円（1〜5ページは逓減）
+      const baseFee = 150000 + Math.max(0, p - 1) * 40000 * (p <= 5 ? 0.9 : 1);
+      let addon = 0;
+      document.querySelectorAll('.feat').forEach(chk=>{ if(chk.checked) addon += parseInt(chk.dataset.price,10); });
+      const total = baseFee + addon;
+      base.textContent = total.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
+      addons.textContent = addon.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
+      sum.textContent = total.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
+    };
+    pages.addEventListener('input', update);
+    document.querySelectorAll('.feat').forEach(el=>el.addEventListener('change', update));
+    update();
   </script>
 </body>
 </html>
