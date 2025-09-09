@@ -1,378 +1,61 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>与作クリエイト｜中小企業の集客に強いホームページ制作</title>
-  <meta name="description" content="与作クリエイトのホームページ制作。テンプレートからフルオーダーまで。制作費用の目安・事例・制作の流れ・よくある質問を掲載。無料見積もり受付中。">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html{scroll-behavior:smooth}
-    .container{max-width:1100px}
-    .glass{backdrop-filter:saturate(180%) blur(12px); background:rgba(255,255,255,.7)}
-    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.08)}
-    .section{padding-top:72px;padding-bottom:72px}
-    .tick:before{content:"✓"; margin-right:.5rem}
-    .sticky-cta{position:fixed;right:1rem;bottom:1rem;z-index:60}
-    details>summary::-webkit-details-marker{display:none}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>温泉旅館 | メイン</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="静けさと温もりに満ちた小さな湯宿。洗練された外観と木の温もり、自然あふれるロケーションで心ほどける滞在を。">
 </head>
-<body class="text-slate-800 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 glass border-b border-slate-200">
-    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-3">
-        <div class="h-9 w-9 rounded-2xl bg-emerald-600 text-white grid place-items-center font-bold">W</div>
-        <div class="leading-tight">
-          <div class="font-bold">与作クリエイト</div>
-          <div class="text-xs text-slate-500">集客×信頼×更新しやすさ</div>
-        </div>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm"><a href="https://kikorinoyosaku.github.io/index.html" target="_blank" rel="noopener" class="hover:text-slate-900 text-slate-600">木こりの与作</a>
-        <a href="#contact" class="px-4 py-2 rounded-xl bg-emerald-600 text-white shadow-soft">無料見積もり</a>
-      </nav>
-      <a href="#contact" class="md:hidden px-3 py-2 rounded-xl bg-emerald-600 text-white text-sm">見積もり</a>
-    </div>
+<body>
+  <header class="header container">
+    <div class="brand">温泉旅館</div>
   </header>
 
-  <!-- Hero -->
-  <section id="top" class="section">
-    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-          中小企業・個人事業に<strong class="bg-emerald-100 px-1">ちょうどいい</strong><br>成果にこだわるホームページ
-        </h1>
-        <p class="mt-5 text-slate-600">テンプレート活用からフルオーダー・CMS構築まで。最短2週間で公開、公開後の運用・改善までワンストップで支援します。</p>
-        <div class="mt-6 flex flex-wrap gap-3 text-sm">
-          <span class="px-3 py-1 rounded-full bg-slate-100">スマホ最適化</span>
-          <span class="px-3 py-1 rounded-full bg-slate-100">SEO基本対策</span>
-          <span class="px-3 py-1 rounded-full bg-slate-100">問い合わせ導線設計</span>
-          <span class="px-3 py-1 rounded-full bg-slate-100">保守サポート</span>
-        </div>
-        <div class="mt-8 flex gap-3">
-          <a href="#contact" class="px-5 py-3 rounded-xl bg-emerald-600 text-white shadow-soft">無料見積もり</a>
-          <a href="#pricing" class="px-5 py-3 rounded-xl border border-slate-300">料金を見る</a>
-        </div>
-        <p class="mt-4 text-xs text-slate-500">※表示の金額は目安です。要件により変動します。</p>
-      </div>
-      <div class="relative">
-        <img src="./img/hero.jpg" alt="制作イメージ" class="rounded-2xl shadow-soft">
-        <div class="absolute -bottom-6 left-6 right-6 rounded-2xl bg-white shadow-soft p-4 flex items-center gap-4">
-          <div class="text-3xl">🚀</div>
-          <div class="text-sm">
-            <div class="font-semibold">公開までの目安：2〜6週間</div>
-            <div class="text-slate-500">小規模サイトやLPは短納期も対応可</div>
-          </div>
-        </div>
-      </div>
+  <main class="container">
+    <div class="hero hero-video">
+      <video autoplay muted loop playsinline poster="img/tatemono.jpg">
+        <source src="video/IMG_4835.mov" type="video/quicktime">
+        <!-- 可能なら MP4(H.264) も用意すると再生互換が上がります -->
+        <!-- <source src="video/hero.mp4" type="video/mp4"> -->
+      </video>
+      <div class="copywrap"><h1 class="copy">心ほどける、特別なひととき。<br>静けさに寄り添う温泉旅館。</h1></div>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="section bg-emerald-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">提供サービス</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">コーポレートサイト</div>
-          <p class="mt-2 text-slate-600">会社の信頼を高める定番構成。ニュース更新・採用情報・お問い合わせなど。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">5〜15ページ想定</li>
-            <li class="tick">CMS（WordPress/Headless 可）</li>
-            <li class="tick">セキュリティ/バックアップ設定</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">LP（ランディングページ）</div>
-          <p class="mt-2 text-slate-600">広告やキャンペーンに特化。CVR改善を意識した構成で最短公開。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">1ページ完結</li>
-            <li class="tick">計測タグ/フォーム最適化</li>
-            <li class="tick">A/Bテスト設計（任意）</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">採用サイト</div>
-          <p class="mt-2 text-slate-600">エントリー導線と魅力設計にフォーカス。募集要項の更新もラクに。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">職種別ページ/社員インタビュー</li>
-            <li class="tick">応募フォーム/ATS連携（任意）</li>
-            <li class="tick">CMS更新権限の設計</li>
-          </ul>
+    <section class="section">
+      <div class="eyebrow">CONCEPT</div>
+
+      <div class="grid card split">
+        <div class="media"><img src="img/gaikan.jpg" alt="洗練された外観"></div>
+        <div>
+          <h2>洗練された外観</h2>
+          <p>凛とした直線美とガラスの抜け感。大きな窓から移ろう光と景色が入り、上質で静謐な時間を紡ぎます。</p>
         </div>
       </div>
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">EC/予約サイト</div>
-          <p class="mt-2 text-slate-600">Shopify等の活用でスピーディに構築。決済・在庫・配送を一元管理。</p>
+
+      <div class="grid card split rev">
+        <div>
+          <h2>温かみのある玄関</h2>
+          <p>木のぬくもりと柔らかな灯りが迎える玄関。旅の始まりに、ほっと息をつける安らぎを。</p>
         </div>
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">運用・改善</div>
-          <p class="mt-2 text-slate-600">公開後の分析・改善・保守。記事制作/撮影/広告運用まで伴走。</p>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-xl font-semibold">ブランディング</div>
-          <p class="mt-2 text-slate-600">ロゴ/カラー/トーン&マナーを策定。紙面・看板・SNSまで一貫対応。</p>
+        <div class="media"><img src="img/genkan.jpg" alt="温かみのある玄関"></div>
+      </div>
+
+      <div class="grid card split">
+        <div class="media"><img src="img/location.jpg" alt="静かで自然あふれるロケーション"></div>
+        <div>
+          <h2>静かなロケーション</h2>
+          <p>海と緑に抱かれた高台。朝は鳥の声、夜は星の瞬き。日常から一歩離れ、心が整う景色に包まれます。</p>
         </div>
       </div>
+    </section>
+
+    <div class="footer-links">
+      <a href="index.html">メインページ</a>
+      <a href="rooms.html">ルームページ</a>
+      <a href="bath.html">バスページ</a>
     </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="section">
-    <div class="container mx-auto px-4">
-      <div class="flex items-end justify-between gap-6 flex-wrap">
-        <h2 class="text-2xl md:text-3xl font-bold">料金の目安</h2>
-        <p class="text-sm text-slate-500">*要件・ページ数・機能により前後します。月額保守は任意。</p>
-      </div>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <!-- Plan 1 -->
-        <div class="p-6 rounded-2xl border border-slate-200">
-          <div class="text-sm font-semibold text-slate-500">ライト</div>
-          <div class="mt-2 text-3xl font-extrabold">¥100,000〜¥300,000</div>
-          <p class="mt-2 text-slate-600">テンプレート活用/LPや小規模サイトに。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">1〜5ページ</li>
-            <li class="tick">スマホ最適化</li>
-            <li class="tick">基本SEO/計測タグ</li>
-          </ul>
-        </div>
-        <!-- Plan 2 -->
-        <div class="p-6 rounded-2xl border-2 border-emerald-600 shadow-soft">
-          <div class="text-sm font-semibold text-slate-500">スタンダード</div>
-          <div class="mt-2 text-3xl font-extrabold">¥300,000〜¥800,000</div>
-          <p class="mt-2 text-slate-600">コーポレート標準構成。CMS/撮影/原稿サポート可。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">5〜15ページ</li>
-            <li class="tick">CMS（ブログ/ニュース）</li>
-            <li class="tick">セキュリティ/バックアップ</li>
-          </ul>
-        </div>
-        <!-- Plan 3 -->
-        <div class="p-6 rounded-2xl border border-slate-200">
-          <div class="text-sm font-semibold text-slate-500">プロ</div>
-          <div class="mt-2 text-3xl font-extrabold">¥800,000〜¥2,000,000</div>
-          <p class="mt-2 text-slate-600">高度なデザイン/機能、大規模コンテンツに。</p>
-          <ul class="mt-4 space-y-1 text-sm text-slate-700">
-            <li class="tick">多言語/予約/会員機能など</li>
-            <li class="tick">UX/UI設計/アクセシビリティ</li>
-            <li class="tick">パフォーマンス最適化</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Monthly -->
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl bg-emerald-50">
-          <div class="font-semibold">運用・保守（任意）</div>
-          <ul class="mt-2 text-sm text-slate-700 space-y-1">
-            <li>ライト：¥5,000/月（ドメイン・SSL更新/軽微修正）</li>
-            <li>標準：¥15,000/月（更新代行/レポート）</li>
-            <li>強化：¥50,000/月（改善提案/ABテスト/記事2本）</li>
-          </ul>
-        </div>
-        <div class="p-6 rounded-2xl bg-emerald-50">
-          <div class="font-semibold">追加オプション</div>
-          <ul class="mt-2 text-sm text-slate-700 space-y-1">
-            <li>写真/動画撮影</li>
-            <li>コピーライティング</li>
-            <li>多言語・予約/決済・会員機能</li>
-            <li>広告運用/計測設計</li>
-          </ul>
-        </div>
-        <div class="p-6 rounded-2xl bg-emerald-50">
-          <div class="font-semibold">納期の目安</div>
-          <ul class="mt-2 text-sm text-slate-700 space-y-1">
-            <li>LP：2〜3週間</li>
-            <li>小中規模サイト：4〜8週間</li>
-            <li>大規模/高度機能：8〜12週間〜</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Estimator -->
-  <section class="section bg-emerald-50">
-    <div class="container mx-auto px-4">
-      <h3 class="text-xl md:text-2xl font-bold">かんたん見積りシミュレーター（概算）</h3>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <label class="block text-sm font-semibold">ページ数：<span id="pagesOut">6</span>ページ</label>
-          <input id="pages" type="range" min="1" max="20" value="6" class="w-full">
-          <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="50000"> お問い合わせフォーム</label>
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="120000"> CMS（ブログ/更新機能）</label>
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="150000"> 予約/決済</label>
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="80000"> 多言語対応</label>
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="60000"> 写真撮影</label>
-            <label class="flex items-center gap-2"><input type="checkbox" class="feat" data-price="60000"> ライティング支援</label>
-          </div>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="text-sm text-slate-500">※本見積りは概算です（デザイン・要件・素材の有無等により変動）。</div>
-          <div class="mt-4 text-2xl font-extrabold">概算：<span id="sum">¥0</span></div>
-          <div class="mt-2 text-sm text-slate-600">内訳：基本 <span id="base">¥0</span> + 機能 <span id="addons">¥0</span></div>
-          <a href="#contact" class="mt-6 inline-block px-5 py-3 rounded-xl bg-emerald-600 text-white">正式見積もりを依頼する</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Works -->
-  <section id="works" class="section">
-    <div class="container mx-auto px-4">
-      <div class="flex items-end justify-between gap-6 flex-wrap">
-        <h2 class="text-2xl md:text-3xl font-bold">制作事例</h2>
-        <a href="#contact" class="text-sm underline">もっと見る</a>
-      </div>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <figure class="rounded-2xl overflow-hidden border border-slate-200">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="事例A" class="w-full h-44 object-cover">
-          <figcaption class="p-4 text-sm">
-            <div class="font-semibold">製造業コーポレート</div>
-            <div class="text-slate-600">お問い合わせ2.3倍 / 公開4週間</div>
-          </figcaption>
-        </figure>
-        <figure class="rounded-2xl overflow-hidden border border-slate-200">
-          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="事例B" class="w-full h-44 object-cover">
-          <figcaption class="p-4 text-sm">
-            <div class="font-semibold">飲食店LP</div>
-            <div class="text-slate-600">予約率+38% / 公開2週間</div>
-          </figcaption>
-        </figure>
-        <figure class="rounded-2xl overflow-hidden border border-slate-200">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="事例C" class="w-full h-44 object-cover">
-          <figcaption class="p-4 text-sm">
-            <div class="font-semibold">採用サイト</div>
-            <div class="text-slate-600">応募数+52% / 公開6週間</div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Flow -->
-  <section id="flow" class="section bg-emerald-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">制作の流れ</h2>
-      <ol class="mt-6 grid md:grid-cols-3 gap-6 list-decimal list-inside">
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">01. ヒアリング & 目標設定</div>
-          <p class="text-slate-600 text-sm mt-2">目的・KPI・想定ユーザー・競合・要件を整理。</p>
-        </li>
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">02. 設計・見積り</div>
-          <p class="text-slate-600 text-sm mt-2">サイトマップ/ワイヤー/制作計画と費用のご提示。</p>
-        </li>
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">03. デザイン/実装</div>
-          <p class="text-slate-600 text-sm mt-2">レビュー→改訂→実装。スマホ/速度/アクセシビリティ対応。</p>
-        </li>
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">04. 検収・公開</div>
-          <p class="text-slate-600 text-sm mt-2">最終確認後に本番公開。計測タグ/サーチコンソール登録など。</p>
-        </li>
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">05. 運用・改善</div>
-          <p class="text-slate-600 text-sm mt-2">更新代行/解析レポート/改善提案/記事制作など。</p>
-        </li>
-        <li class="p-6 bg-white rounded-2xl shadow-soft">
-          <div class="font-semibold">06. 保守・サポート</div>
-          <p class="text-slate-600 text-sm mt-2">バックアップ/セキュリティ/トラブル時の対応。</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">よくある質問</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-4">
-        <details class="p-5 rounded-xl border border-slate-200">
-          <summary class="font-semibold cursor-pointer">費用はどのように決まりますか？</summary>
-          <div class="pt-3 text-slate-600 text-sm">ページ数・機能・デザインの自由度・原稿/写真の有無・依頼先体制（個人/制作会社）などで決まります。まずは目的と優先度を一緒に整理します。</div>
-        </details>
-        <details class="p-5 rounded-xl border border-slate-200">
-          <summary class="font-semibold cursor-pointer">公開までの期間は？</summary>
-          <div class="pt-3 text-slate-600 text-sm">LPで2〜3週間、小中規模サイトで4〜8週間が目安です。素材のご用意状況で前後します。</div>
-        </details>
-        <details class="p-5 rounded-xl border border-slate-200">
-          <summary class="font-semibold cursor-pointer">ドメイン・サーバー費はかかりますか？</summary>
-          <div class="pt-3 text-slate-600 text-sm">はい。年額のドメイン費やサーバー利用料がかかります（数千円〜）。代行契約も可能です。</div>
-        </details>
-        <details class="p-5 rounded-xl border border-slate-200">
-          <summary class="font-semibold cursor-pointer">社内で更新できますか？</summary>
-          <div class="pt-3 text-slate-600 text-sm">CMSの導入/権限設計により、ニュースや採用情報の更新を社内で行えるように設計します。</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section bg-emerald-600 text-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">無料見積もり・相談</h2>
-      <p class="mt-2 text-slate-300">最短当日中にご返信。オンライン/訪問どちらも可。</p>
-      <form id="contactForm" class="mt-6 grid md:grid-cols-2 gap-4" data-endpoint="https://formspree.io/f/mwpnaywb" novalidate>
-        <input class="w-full p-3 rounded-xl text-slate-900" name="name" placeholder="お名前" required>
-        <input class="w-full p-3 rounded-xl text-slate-900" type="email" name="email" placeholder="メールアドレス" required>
-        <input class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" name="company" placeholder="会社名（任意）">
-        <textarea class="w-full p-3 rounded-xl text-slate-900 md:col-span-2" name="message" rows="4" placeholder="ご要望・現在の課題など" required></textarea>
-        <input type="text" name="_gotcha" style="display:none">
-        <button type="submit" class="px-5 py-3 rounded-xl bg-white text-emerald-700 font-semibold md:col-span-2">送信する</button>
-        <p id="formStatus" class="md:col-span-2 text-sm text-emerald-100"></p>
-      </form>
-      <div class="mt-3 text-sm text-emerald-100">送信がうまくいかない場合：<a class="underline" href="mailto:kikoriwakoko@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B(Web)&body=%E3%81%8A%E5%90%8D%E5%89%8D%3A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%3A%0A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%3A%0A">メールアプリで直接送る</a> ／ 電話：<a class="underline" href="tel:07090938266">070-9093-8266</a></div>
-      <div class="mt-6 text-sm text-slate-300">電話：070-9093-8266｜メール：kikoriwakoko@gmail.com</div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-10">
-    <div class="container mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div>© <span id="year"></span> 与作クリエイト. All rights reserved.</div>
-      <div class="flex gap-4">
-        <a href="https://kikorinoyosaku.github.io/index.html" target="_blank" rel="noopener" class="underline">木こりの与作</a>
-        <a href="#" class="underline">特定商取引法に基づく表記</a>
-        <a href="#" class="underline">プライバシーポリシー</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Sticky CTA -->
-  <div class="sticky-cta">
-    <a href="#contact" class="px-5 py-3 rounded-full bg-emerald-600 text-white shadow-soft">無料見積もり</a>
-  </div>
-
-  <script>
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Estimator logic（ざっくり概算）
-    const pages = document.getElementById('pages');
-    const pagesOut = document.getElementById('pagesOut');
-    const sum = document.getElementById('sum');
-    const base = document.getElementById('base');
-    const addons = document.getElementById('addons');
-
-    const update = () => {
-      const p = parseInt(pages.value,10);
-      pagesOut.textContent = p;
-      // 基本費：初期費用15万円 + ページ単価4万円（1〜5ページは逓減）
-      const baseFee = 150000 + Math.max(0, p - 1) * 40000 * (p <= 5 ? 0.9 : 1);
-      let addon = 0;
-      document.querySelectorAll('.feat').forEach(chk=>{ if(chk.checked) addon += parseInt(chk.dataset.price,10); });
-      const total = baseFee + addon;
-      base.textContent = total.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
-      addons.textContent = addon.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
-      sum.textContent = total.toLocaleString('ja-JP', {style:'currency',currency:'JPY'});
-    };
-    pages.addEventListener('input', update);
-    document.querySelectorAll('.feat').forEach(el=>el.addEventListener('change', update));
-    update();
-  </script>
-<script>(function(){const form=document.getElementById('contactForm');if(!form)return;const status=document.getElementById('formStatus');form.addEventListener('submit',async(e)=>{e.preventDefault();const btn=form.querySelector('button[type="submit"]');btn.disabled=true;btn.textContent='送信中...';status.textContent='';const fd=new FormData(form);const endpoint=form.dataset.endpoint;try{const res=await fetch(endpoint,{method:'POST',body:fd,headers:{'Accept':'application/json'}});if(res.ok){form.reset();btn.textContent='送信しました';status.textContent='ありがとうございます。折り返しご連絡します。';}else{throw new Error('Form error');}}catch(err){btn.disabled=false;btn.textContent='送信する';status.textContent='送信に失敗しました。メールアプリで直接お送りください。';const name=encodeURIComponent(form.elements['name']?.value||'');const company=encodeURIComponent(form.elements['company']?.value||'');const message=encodeURIComponent(form.elements['message']?.value||'');const mailto=`mailto:kikoriwakoko@gmail.com?subject=${encodeURIComponent('お問い合わせ(Web)')}&body=お名前:${name}%0A会社名:${company}%0Aお問い合わせ内容:%0A${message}`;window.location.href=mailto;}});})();</script>
+    <div class="small">© Onsen Ryokan — 静かにくつろぐ小さな湯宿</div>
+  </main>
 </body>
 </html>
